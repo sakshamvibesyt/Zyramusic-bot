@@ -1,0 +1,41 @@
+services:
+  - type: web
+    name: telegram-music-bot
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    autoDeploy: true
+
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+
+      - key: API_ID
+        sync: false
+
+      - key: API_HASH
+        sync: false
+
+      - key: SESSION_STRING
+        sync: false
+
+      - key: OWNER_ID
+        sync: false
+
+      - key: DATABASE_PATH
+        value: data/bot.db
+
+      - key: DOWNLOAD_DIR
+        value: downloads
+
+      - key: MAX_QUEUE_SIZE
+        value: "50"
+
+      - key: DEFAULT_VOLUME
+        value: "100"
+
+      - key: BOT_NAME
+        value: MusicBot
+
+      - key: LOG_LEVEL
+        value: INFO
