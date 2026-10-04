@@ -1,0 +1,3 @@
+"""
+Music playback subsystem.
+"""
