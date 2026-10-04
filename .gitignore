@@ -1,0 +1,76 @@
+# =========================
+# PYTHON
+# =========================
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# =========================
+# ENV / SECRETS
+# =========================
+
+.env
+.env.*
+!.env.example
+
+# =========================
+# DATABASE
+# =========================
+
+*.db
+*.sqlite
+*.sqlite3
+
+data/*.db
+data/*.sqlite
+data/*.sqlite3
+
+# =========================
+# AUDIO / TEMP FILES
+# =========================
+
+downloads/
+audio/
+temp/
+tmp/
+*.mp3
+*.m4a
+*.webm
+*.wav
+*.ogg
+*.opus
+
+# =========================
+# PYTHON TOOLS
+# =========================
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# =========================
+# IDE
+# =========================
+
+.vscode/
+.idea/
+
+# =========================
+# OS
+# =========================
+
+.DS_Store
+Thumbs.db
+
+# =========================
+# LOGS
+# =========================
+
+*.log
+logs/
